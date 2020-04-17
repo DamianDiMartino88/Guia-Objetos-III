@@ -4,6 +4,7 @@ import com.Circulo.Cilindro;
 import com.Circulo.Circulo;
 import com.Figuras.Cuadrado;
 import com.Figuras.Rectangulo;
+import com.PersonalColegio.Persona;
 import com.PersonalColegio.Estudiante;
 import com.PersonalColegio.Staff;
 
@@ -44,7 +45,7 @@ public class Main {
         Staff staff3= new Staff(1125465,"Vincent","Van Gogh","vincentvangogh@mimail.com","La Noche Estrellada 887",28847.98,"Noche","Quimica");
         Staff staff4 = new Staff(1125465,"Salvador","Dali","salvadordali@mimail.com","La Persistencia De La Memoria 6543",23254.54,"Mañana","Fisica");
 
-        Object[] arregloDePersonas = new Object[8];
+        Persona[] arregloDePersonas = new Persona[8];
 
         arregloDePersonas[0]=estudiante1;
         arregloDePersonas[1]=staff1;

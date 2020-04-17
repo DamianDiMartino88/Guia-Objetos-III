@@ -1,54 +1,55 @@
 package com.Circulo;
 
 public class Circulo {
-    private double Radio;
+    private double radio;
     private String color;
 
     public Circulo(){
 
-        this.Radio=1.0;
+        this.radio=1.0;
         this.color="Rojo";
     }
 
     public Circulo(double radio, String color){
 
-        this.Radio=radio;
+        this.radio=radio;
         this.color=color;
     }
 
     public Circulo(double radio){
 
-        this.Radio=radio;
+        this.radio=radio;
 
     }
 
 
     public double calcularPerimetro(){
-        return (2*3.14*this.Radio);
+        return (2*Math.PI*this.radio);
     }
     public double calcularArea(){
-        return ((3.14)*Math.pow(this.Radio,2));
+        return ((Math.PI)*Math.pow(this.radio,2));
     }
     public double longitudCirculo(){
-        return(2*3.14*this.Radio);
+        return(2*Math.PI*this.radio);
     }
 
     public void caracteristicasCirculo()
     {
-        System.out.println("El Circulo tiene un radio de "+this.Radio+" es de color "+this.color+" y tiene un area de "+this.calcularArea());
+        System.out.println("El Circulo tiene un radio de "+this.radio+" es de color "+this.color+" y tiene un area de "+this.calcularArea());
     }
 
+    @Override
     public String toString()
     {
         return "Circulo";
     }
 
     public double getRadio() {
-        return Radio;
+        return radio;
     }
 
     public void setRadio(double radio) {
-        Radio = radio;
+        this.radio = radio;
     }
 
     public String getColor() {

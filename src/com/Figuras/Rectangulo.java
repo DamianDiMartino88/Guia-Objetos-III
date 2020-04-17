@@ -1,47 +1,47 @@
 package com.Figuras;
 
 public class Rectangulo {
-    private double Base;
-    private double Altura;
+    private double base;
+    private double altura;
     public String color;
 
 
     public Rectangulo(){
         super();
-        this.Base=0;
-        this.Altura=0;
+        this.base=0;
+        this.altura=0;
         this.color="";
     }
 
     public Rectangulo(double base, double altura, String color){
-        this.Base=base;
-        this.Altura=altura;
+        this.base=base;
+        this.altura=altura;
         this.color=color;
     }
     public Rectangulo(double base, double altura){
-        this.Base=base;
-        this.Altura=altura;
+        this.base=base;
+        this.altura=altura;
         this.color="";
     }
 
     public double calcularArea(){
-        return (this.Base*this.Altura);
+        return (this.base*this.altura);
     }
 
     public double calcularPerimetro(){
-        return (2*(this.Base+this.Altura));
+        return (2*(this.base+this.altura));
     }
 
     public double getBase() {
-        return Base;
+        return base;
     }
 
     public void setBase(double base) {
-        Base = base;
+        this.base = base;
     }
 
     public double getAltura() {
-        return Altura;
+        return altura;
     }
 
     public String getColor() {
@@ -53,7 +53,7 @@ public class Rectangulo {
     }
 
     public void setAltura(double altura) {
-        Altura = altura;
+        this.altura = altura;
     }
 
 
